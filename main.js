@@ -4,7 +4,7 @@ let url = "https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata";
 
 let userInp = document.getElementById("user-inp").value;
 
-fetch(url + "")
+fetch(url)
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
@@ -28,5 +28,18 @@ fetch(url + "")
       }
     }
     console.log(ingredients);
-    result.innerHTML = `<img  src= ${myMeal.strMealThumb}>`;
+    result.innerHTML = `<img  src= ${myMeal.strMealThumb}>
+    <div class="details">
+    <h2>${myMeal.strMeal}</h2>
+    <h2>${myMeal.strArea}</h2>
+</div>
+<div id="ingredient-con">
+<div id="recipe">
+    <button id="hide-recipe">x</button>
+    <pre id="instructions">${myMeal.strInstructions}</pre>
+</div>
+</div>
+    `;
+
+   
   });
