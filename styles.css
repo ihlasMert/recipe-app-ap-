@@ -17,7 +17,7 @@ body {
   transform: translate(-50%, -50%);
   left: 50%;
   top: 10em;
-  border-radius: 1px;
+  border-radius: 10px;
 }
 
 .search-container {
