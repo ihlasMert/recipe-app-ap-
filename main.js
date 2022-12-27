@@ -55,4 +55,10 @@ fetch(url)
       parent.appendChild(child)
       ingredientCon.appendChild(parent)
     })
+    hideRecipe.addEventListener("click", ()=>{
+      recipe.style.display = "none"
+    })
+    showRecipe.addEventListener("click", ()=>{
+      recipe.style.display = "block"
+    })
   });
