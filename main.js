@@ -33,13 +33,20 @@ fetch(url)
     <h2>${myMeal.strMeal}</h2>
     <h2>${myMeal.strArea}</h2>
 </div>
-<div id="ingredient-con">
+<div id="ingredient-con"></div>
+
 <div id="recipe">
+
     <button id="hide-recipe">x</button>
     <pre id="instructions">${myMeal.strInstructions}</pre>
+
 </div>
-</div>
+<button id="show-recipe">View Recipe</button>
     `;
 
-   
+    let ingredientCon = document.getElementById("ingredient-con");
+    let parent = document.createElement("ul");
+    let recipe = document.getElementById("recipe");
+    let hideRecipe = document.getElementById("hide-recipe");
+    let showRecipe = document.getElementById("show-recipe");
   });
